@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:elevation="4dp"
+        android:id="@+id/toolBar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size"
+                android:layout_gravity="center"
+
+                android:textSize="27sp"
+                android:textColor="@color/cyan"
+                android:padding="5dp"
+                />
+            <NumberPicker
+                android:layout_alignLeft="@id/tvSize"
+                android:layout_width="60dp"
+                android:layout_height="180dp"
+                android:background="@drawable/stroke_top_background"
+                android:id="@+id/pickerSize"
+                android:orientation="horizontal"
+                android:theme="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar"
+                android:layout_below="@id/tvSize"
+               />
+
+
+            <TextView
+                android:id="@+id/tvBoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boom"
+                android:layout_toRightOf="@id/tvSize"
+                android:layout_marginLeft="100dp"
+                android:textSize="27sp"
+                android:textColor="@color/cyan"
+                android:padding="5dp"
+                />
+            <NumberPicker
+
+                android:layout_width="60dp"
+                android:layout_height="180dp"
+                android:background="@drawable/stroke_top_background"
+                android:id="@+id/pickerBoom"
+                android:layout_alignStart="@id/tvBoom"
+                android:layout_below="@id/tvBoom"
+                android:theme="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar"
+                />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/option_button_press"
+            android:text="Cancel"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textColor="@color/cyan"
+            android:id="@+id/cancel"
+            />
+
+        <Button
+            android:id="@+id/apply"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/option_button_press"
+            android:padding="10dp"
+            android:text="Apply"
+            android:textColor="@color/cyan"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

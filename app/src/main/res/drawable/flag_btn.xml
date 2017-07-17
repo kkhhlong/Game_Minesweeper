@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape android:shape="rectangle" >
+
+            <stroke android:color="@color/cyan"
+                android:width="1px"
+                />
+            <solid android:color="@color/cyan_transparent"/>
+
+        </shape>
+    </item>
+    <item android:left="1dp">
+        <bitmap android:src="@drawable/flag"
+            />
+    </item>
+
+</layer-list>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+
+          android:orientation="vertical"
+          android:background="#000">
+          <android.support.v7.widget.Toolbar
+              android:layout_width="match_parent"
+              android:layout_height="?actionBarSize"
+              android:elevation="4dp"
+              android:id="@+id/toolBar"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="0.9"
+             android:padding="10dp"
+             android:background="@drawable/stroke_top_background"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp">
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/flag_btn_press"
+                android:layout_height="match_parent"
+                android:id="@+id/markFlag"
+                android:button="@android:color/transparent"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:text="FLAG     : 10 \nBooM   : 10\nSize     : 10x10"
+                android:textSize="23sp"
+                android:padding="5dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/cyan"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:id="@+id/inform"
+                android:layout_marginLeft="20dp"
+                />
+         </LinearLayout>
+         <GridLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="2.8"
+             android:background="@drawable/backgound"
+             android:id="@+id/buttonPanel"
+             android:layout_marginBottom="25dp"
+             >
+
+         </GridLayout>
+
+
+
+      </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_end_game"
+        >
+
+        <ImageView
+            android:id="@+id/haha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/boom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/haha"
+            android:layout_centerHorizontal="true"
+            android:text="HaHaHaHaHaHaHa"
+            android:textColor="@color/cyan"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/win"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_end_game"
+
+        >
+
+        <ImageView
+            android:id="@+id/congra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/win_ico" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/congra"
+            android:layout_centerHorizontal="true"
+            android:text="Congratulation"
+            android:textColor="@color/cyan"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</FrameLayout>

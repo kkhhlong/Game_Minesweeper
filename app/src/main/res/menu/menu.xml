@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Chơi lại"
+        android:id="@+id/reloadd"/>
+    <item android:title="Cài đặt"
+        android:id="@+id/optionn"/>
+    <item android:title="Thoát"
+        android:id="@+id/cancell"
+        />
+</menu>
